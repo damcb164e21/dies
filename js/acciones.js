@@ -61,10 +61,3 @@ $(document).ready(function(e){
 	          'mensaje:' + error.message+ '\n');
 }
 });//documento ready
-	    
-							  
-			  
-			  
-			  
-			  
-			  
