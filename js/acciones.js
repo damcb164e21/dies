@@ -34,9 +34,9 @@ $(document).ready(function(e){
 	 var element = document.getElementById('acelerometro');
 	 
 	 element.innerHTML = 'Aceleracion en  X: ' + acceleration.x + '<br />' +
-	    'Aceleracion en  Y: ' + acceleration.y + '<br />' +	  
-		'Aceleracion en  Z: ' + acceleration.z + '<br />' +	  
-		'Intervalo: '       + acceleration.timestamp + '<br />'; 
+	                     'Aceleracion en  Y: ' + acceleration.y + '<br />' +	  
+		                 'Aceleracion en  Z: ' + acceleration.z + '<br />' +	  
+		                 'Intervalo: '       + acceleration.timestamp + '<br />'; 
 	  }
 	  
 	  //Error: Falta al obtener la aceleracion
@@ -46,19 +46,19 @@ $(document).ready(function(e){
 	  // Exito al Localizar
 	  function Localiza(posicion) {
 		  var element = document.getElementById('geolocalizacion');
-		  element.innerHTML = 'Latitud: '           + posicion.coords.latitude      + ' <br />' +
-		                      'Longitud: '          + posicion.coords.longitude      + ' <br />' +
-			                  'Altitud: '           + posicion.coords.altitude      + ' <br />' +
-			                  'Precision: '         + posicion.coords.accuracy      + ' <br />' +
-							  'Precision de Altitud: '          + posicion.coords.altitudeAccuracy     + ' <br />' +
-							  'Direccion: '          + posicion.coords.heading      + ' <br />' +
-							  'Velocidad: '          + posicion.coords.speed     + ' <br />' +
-							  'Intervalo: '          + posicion.timestamp      + ' <br />';
+		  element.innerHTML = 'Latitud: '           + posicion.coords.latitude      + '<br />' +
+		                      'Longitud: '          + posicion.coords.longitude      + '<br />' +
+			                  'Altitud: '           + posicion.coords.altitude      + '<br />' +
+			                  'Precision: '            + posicion.coords.accuracy      + '<br />' +
+							  'Precision de Altitud: ' + posicion.coords.altitudeAccuracy     + '<br />' +
+							  'Direccion: '          + posicion.coords.heading      + '<br />' +
+							  'Velocidad: '          + posicion.coords.speed     + '<br />' +
+							  'Intervalo: '          + posicion.timestamp      + '<br />';
 	  }
 	// Error en la geolocalizacion
 	function ErrorLocalizacion(error){
-	   alert('codigo: '      + error.code  +'\n' + 
-	          'mensaje: ' + error.message+ '\n');
+	   alert('codigo:'      + error.code  +'\n' + 
+	          'mensaje:' + error.message+ '\n');
 }
 });//documento ready
 	    
