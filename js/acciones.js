@@ -7,7 +7,7 @@ $(document).ready(function(e){
 	
 	// Cuando esta listo el dispositivo
 	function Dispositivo_Listo() {
-		comienza();
+		Comienza();
 	}
 	
 	// Empieza la 'observacion' de la aceleracion
@@ -24,7 +24,7 @@ $(document).ready(function(e){
 	  
 	  function Detente() {
 		  if (watchID) {
-			  navigator.accelerometro.clearWatch(watchID);
+			  navigator.accelerometer.clearWatch(watchID);
 			  watchID = null;
 		  }
 	  }
